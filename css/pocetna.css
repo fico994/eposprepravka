@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.meniLista {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background: lavenderblush;
+    font-family: sans-serif;   
+}
+
+.meniLista{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 5;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meniLista li {
+    margin: 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.logoPocetna {
+    /* margin: auto 0; */
+    height: 150px;
+    width: 150px;
+}
+
+.meni ul li a:hover {
+    color: red;
+}
+
+footer {
+    background-color: #f2f2f2;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.levo{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.levo img{
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+}
+.sredina{
+    text-align: center;
+    width: 30%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sredina p{
+    width: 100%;
+}
+.drustveneMreze{
+    width:100%;
+}
+
+.drustveneMreze #fb {
+    opacity: 50%;
+}
+
+.drustveneMreze #insta {
+    opacity: 50%;
+}
+
+.drustveneMreze #fb:hover {
+    opacity: 100%;
+}
+
+#insta:hover {
+    opacity: 100%;
+}
+.sredina img{
+    width: 50px;
+    height: 50px;
+}
+.desno{
+text-align: center;
+    align-content: center;
+
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.desno p{
+    width: 100%;
+}
+#vreme{
+    text-align: center;
+    font-size: 50px;
+}
+
+.naslov {
+    text-align: center;
+    font-size: 40px;
+    
+}
+
+#slogan {
+    animation-name: animacija;
+    animation-iteration-count: infinite;
+    animation-duration: 5s;
+    text-align: center;
+    font-size: 100px;
+}
+
+#dobrodoslica {
+    text-align: center;
+    font-size: 40px;
+}
+
+@keyframes animacija {
+    0%{color:#ff0000}
+    50%{color:#000066}
+    100%{color:#ccccb3}
+}
+    
+@media all and (max-width: 650px) {
+    .meniLista {
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+    .meniLista li{
+        font-size: 1.5rem;
+    }
+    .logoPocetna img{
+        height: 100px;
+        width: 100px;
+    }
+}

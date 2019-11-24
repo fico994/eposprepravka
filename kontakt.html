@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <link rel="stylesheet" href="css/kontakt.css">
+    <title>Kontakt</title>
+</head>
+
+<body>
+    <menu class="meni">
+        <ul class="meniLista">
+            <a href="index.html" class="logoPocetna"><img src="favicon.png" alt="logo"></a>
+            <li><a href="index.html" class="linkPocetna">Početna</a></li>
+            <li><a href="usluge.html" class="linkUsluge">Usluge</a></li>
+            <li><a href="onama.html" class="oNama">O nama</a></li>
+            <li><a href="kontakt.html" class="kontakt">Kontakt</a></li>
+        </ul>
+    </menu>
+
+    <div id="form">
+        <h1 id="zaglavljeForme">Kontakt</h1>
+        <form onsubmit="return validateForm()">
+            <p></p><label for="name">Ime</label>
+            <input type="text" id="name" placeholder="Vaše ime"> </p>
+            <p><label for="name">Email</label>
+                <input type="email" id="email" placeholder="Unesite mail"> </p>
+            <select id="tipVozila">
+                <option value="izaberi" >Izaberite tip vozila:</option>
+                <option value="Kamion">Kamion</option>
+                <option value="Bager">Bager</option>
+                <option value="Traktor">Traktor</option>
+                <option value="Valjak">Valjak</option>
+            </select>
+            <p><label for="name">Poruka</label>
+                <textarea name="poruka" id="message" cols="30" rows="10" placeholder="Poruka"></textarea> </p>
+            <p>
+                <input type="submit" name="submit" value="Pošalji" id="submit">
+            </p>
+
+
+        </form>
+    </div>
+
+    <footer>
+            <div class="levo">
+                <img src="favicon.png" alt="logoFooter">
+                <p>Copyright &copy; 2019, Jovanovići</p>
+            </div>
+    
+            <div class="sredina">
+                <p>Pronađite nas na društvenim mrežama</p>
+                <div class="drustveneMreze">
+                    <a href="https://www.facebook.com/automehanicar.zule.5" target="_blank"><img src="img/faceLogo.png" alt="fb" id="fb"></a>
+                    <a href="https://www.instagram.com/automehanicarzule031/?hl=sr" target="_blank"><img src="img/instaLogo.png" alt="insta"id="insta"></a>
+    
+                </div>
+            </div>
+    
+            <div class="desno">
+                <p>Vojvođanska 71/b Užice, Srbija</p>
+                <p>+381 64 148 68 80</p>
+                <p><a href="mailto:automehanicarzule@gmail.com">automehanicarzule@gmail.com</a></p>
+            </div>
+        </footer>
+    </body>
+    <script src="js/kontaktJS.js"></script>
+
+</html>

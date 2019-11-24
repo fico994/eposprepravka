@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.meni {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background: lavenderblush;
+    font-family: sans-serif;   
+}
+
+.meni ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 5;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meni ul li {
+    margin: 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.logoPocetna {
+    margin-top: 65px;
+}
+
+.meni ul li a:hover {
+    color: red;
+}
+
+#form {
+    width: 500px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+#zaglavljeForme {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#form input {
+    width: 100%;
+    border-radius: 5px;
+    height: 40px;
+}
+#tipVozila{
+    height: 25px;
+    margin: 2px 0;
+}
+#form #message {
+    width: 100%;
+    border-radius: 5px;
+    background: lightblue;
+
+}
+
+#form #submit {
+    height: 30px;
+    background: blue;
+    color: white;
+
+}
+
+footer {
+    background-color: #f2f2f2;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.levo{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.levo img{
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+}
+.sredina{
+    text-align: center;
+    width: 30%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sredina p{
+    width: 100%;
+}
+.drustveneMreze{
+    width:100%;
+}
+
+.drustveneMreze #fb {
+    opacity: 50%;
+}
+
+.drustveneMreze #insta {
+    opacity: 50%;
+}
+
+.drustveneMreze #fb:hover {
+    opacity: 100%;
+}
+
+#insta:hover {
+    opacity: 100%;
+}
+.sredina img{
+    width: 50px;
+    height: 50px;
+}
+.desno{
+text-align: center;
+    align-content: center;
+
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.desno p{
+    width: 100%;
+}
+
+@media all and (max-width: 650px) {
+    ul {
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+    
+    .meni {
+        height: auto;
+    }
+    .meni ul li{
+        justify-content: space-around;
+        font-size: 1.5rem;
+        height: 2em;
+    }
+    .logoPocetna img{
+        height: 100px;
+        width: 100px;
+        
+    }
+
+
+    form {
+        flex-direction: column;
+        text-align: center;
+    }
+}

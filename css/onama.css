@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+.meniLista {
+    display: flex;
+    flex-direction: row;
+    height: 150px;
+    background: lavenderblush;
+    font-family: sans-serif;   
+}
+
+.meniLista{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex: 5;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.meniLista li {
+    margin: 0;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: grey;
+}
+
+.logoPocetna {
+    /* margin: auto 0; */
+    height: 150px;
+    width: 150px;
+}
+
+.meni ul li a:hover {
+    color: red;
+}
+
+.pozadina {
+    background-image: url('https://www.biznisgroup.com/wp-content/uploads/2019/08/ZGT_servis__06-1024x683.jpg');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+}
+.tekst {
+    /* width: 500px; */
+    margin: auto;
+}
+.tekst p {
+    text-align: center;
+    font-size: 50px;
+    color: yellow;
+}
+
+footer {
+    background-color: #f2f2f2;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.levo{
+    width: 30%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.levo img{
+    justify-self: center;
+    height: 100px;
+    width: 100px;
+}
+.sredina{
+    text-align: center;
+    width: 30%;
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+.sredina p{
+    width: 100%;
+}
+.drustveneMreze{
+    width:100%;
+}
+
+.drustveneMreze #fb {
+    opacity: 50%;
+}
+
+.drustveneMreze #insta {
+    opacity: 50%;
+}
+
+.drustveneMreze #fb:hover {
+    opacity: 100%;
+}
+
+#insta:hover {
+    opacity: 100%;
+}
+.sredina img{
+    width: 50px;
+    height: 50px;
+}
+.desno{
+text-align: center;
+    align-content: center;
+
+    width: 30%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.desno p{
+    width: 100%;
+}
+
+@media all and (max-width: 650px) {
+    .meniLista {
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+    .meniLista li{
+        font-size: 1.5rem;
+    }
+    .logoPocetna img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media all and (max-width: 650px) {
+    .meniLista {
+        flex-direction: column;
+        text-align: center;
+        height: 300px;
+    }
+    .meniLista li{
+        font-size: 1.5rem;
+    }
+    .logoPocetna img{
+        height: 100px;
+        width: 100px;
+    }
+}
+
